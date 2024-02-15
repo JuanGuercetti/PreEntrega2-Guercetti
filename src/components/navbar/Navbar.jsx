@@ -1,15 +1,26 @@
+import './Navbar.css'
+
 const Navbar = () => {
     return (
         <>
-        <header>
-            <h4>Happets</h4>
+        <nav className="navbar navbar-expand bg-success">
+            {/* Sacar los colores de boots, hacerlos en el css */}
+            <a className="navbar-brand" href="#">Happets</a>
 
-            <nav>
-                <a href="">Collares</a>
-                <a href="">Pretales</a>
-                <a href="">Chapas Identificatorias</a>
-            </nav>
-        </header>
+            <div className="collapse navbar-collapse">
+                <ul className="navbar-nav">
+                    <li>
+                        <a href="">Collares</a>
+                    </li>
+                    <li>
+                        <a href="">Pretales</a>
+                    </li>
+                    <li>
+                        <a href="">Chapas Identificatorias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         </>
     )
 }
