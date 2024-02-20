@@ -1,15 +1,15 @@
 import './Navbar.css'
-import logoHappets from '../../assets/logo.jpg'
+import logoBlack from './assets/logoBlack.png'
+import CartWidget from '../CartWidget/CartWidget.jsx'
 
 const Navbar = () => {
     return (
         <>
         <nav className="navbar navbar-expand bg-success">
             {/* Sacar los colores de boots, hacerlos en el css */}
-            {/* <a className="navbar-brand" href="#">Happets</a> */}
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                    <img src={logoHappets} alt="Logo" className="logo-img d-inline-block align-text-top"/>
+                    <img src={logoBlack} alt="Logo" className="logo-img d-inline-block align-text-top"/>
                     Happets
                 </a>
             </div>
@@ -36,6 +36,8 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
+
+            {/* <CartWidget /> */}
         </nav>
         </>
     )
