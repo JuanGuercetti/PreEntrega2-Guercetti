@@ -1,7 +1,10 @@
+import cartImage from './assets/cartImage.png';
+import './CartWidget.css';
+
 const CartWidget = () => {
     return (
         <button>
-            <img />
+            <img src={cartImage} className='cartWidgetImg'/>
         </button>
     )
 }

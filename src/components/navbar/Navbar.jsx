@@ -12,32 +12,22 @@ const Navbar = () => {
                     <img src={logoBlack} alt="Logo" className="logo-img d-inline-block align-text-top"/>
                     Happets
                 </a>
+
+                <div className="collapse navbar-collapse">
+                    <ul className="navbar-nav nav-underline">
+                        <li><a href="" className='nav-link'>Correas</a></li>
+                        <li><a href="" className='nav-link'>Collares</a></li>
+                            {/* Regulables y tradicionales
+                            Hacer menú desplegable */}
+                        <li><a href="" className='nav-link'>Pretales</a></li>
+                        <li><a href="" className='nav-link'>Chapas Identificatorias</a></li>
+                        <li><a href="" className='nav-link disabled'>Bandanas</a></li>
+                            {/* Proximamente */}               
+                    </ul>
+                </div>
             </div>
 
-            <div className="collapse navbar-collapse">
-                <ul className="navbar-nav nav-underline">
-                    <li>
-                        <a href="" className='nav-link'>Correas</a>
-                    </li>
-                    <li>
-                        <a href="" className='nav-link'>Collares</a>
-                        {/* Regulables y tradicionales
-                        Hacer menú desplegable */}
-                    </li>
-                    <li>
-                        <a href="" className='nav-link'>Pretales</a>
-                    </li>
-                    <li>
-                        <a href="" className='nav-link'>Chapas Identificatorias</a>
-                    </li>
-                    <li>
-                        <a href="" className='nav-link disabled'>Bandanas</a>
-                        {/* Proximamente */}
-                    </li>
-                </ul>
-            </div>
-
-            {/* <CartWidget /> */}
+            <CartWidget />
         </nav>
         </>
     )
