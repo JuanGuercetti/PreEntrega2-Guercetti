@@ -3,8 +3,9 @@ import './CartWidget.css';
 
 const CartWidget = () => {
     return (
-        <button>
-            <img src={cartImage} className='cartWidgetImg'/>
+        <button className='btn-cart btn btn-success'>
+            <img src={cartImage} className='cartImg'/>
+            0
         </button>
     )
 }
