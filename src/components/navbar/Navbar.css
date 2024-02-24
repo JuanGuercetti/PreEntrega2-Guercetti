@@ -2,6 +2,9 @@
     background-color: #1e975f;
 }
 
+.navbar-brand:hover {
+    opacity: .6;
+}
 .logo-img {
     width: 60px;
     height: 60px;
