@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './ItemListContainer.css';
 import { getProducts } from '../../asyncMock';
 import ItemList from '../ItemList/ItemList';
+import Item from '../Item/Item';
 
 const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([]);
@@ -22,7 +23,14 @@ const ItemListContainer = ({ greeting }) => {
             {/* {props.children}
             React automatiza el meter dentro del objeto props los children */}
 
-            <ItemList products={ products }/>
+            {/* <ItemList products={ products }/> */}
+            <Item 
+                id='1'
+                name='Producto 1'
+                img='...'
+                price='1250'
+                description='Descripción del producto 1'
+            />
         </div>
     )
 }

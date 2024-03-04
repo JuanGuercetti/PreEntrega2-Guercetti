@@ -1,0 +1,10 @@
+.btn-container-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.btn-container-child button {
+    margin: 0 10px;
+}
