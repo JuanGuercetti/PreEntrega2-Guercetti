@@ -1,10 +1,8 @@
 import CountBtn from '../CountBtn/CountBtn';
 import './Item.css';
 
-const Item = ( { id, name, img, price, description }) => {
+const Item = ( { id, name, img, price, description, stock }) => {
     return (
-        // <div className='card-container'>
-        // Debería configurar otro container para renderizar varias cards adentro
         <div className='col-sm-4 mb-3'>
             <div className="card text-bg-success ">
                 <img src={ img } className="card-img-top" alt="..."/>
@@ -12,14 +10,7 @@ const Item = ( { id, name, img, price, description }) => {
                     <h5 className="card-title"> { name } </h5>
                     <p className="card-text"> { description } </p>
                     <p className="card-text"> { price } </p>
-
-                    {/* <label for="inputState" class="form-label">Cantidad</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select> */}
-                    <CountBtn title='Cantidad' stock='3'/>
-
+                    <CountBtn title='Cantidad' stock={ stock }/>
                     <a href="#" className="btn btn-outline-light">Comprar</a>
                 </div>
             </div>
