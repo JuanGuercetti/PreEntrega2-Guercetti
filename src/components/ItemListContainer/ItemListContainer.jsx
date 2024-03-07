@@ -20,17 +20,8 @@ const ItemListContainer = ({ greeting }) => {
     return (
         <div>
             <h1 className='title-main'>{ greeting }</h1>
-            {/* {props.children}
-            React automatiza el meter dentro del objeto props los children */}
 
             <ItemList products={ products }/>
-            {/* <Item 
-                id='1'
-                name='Producto 1'
-                img='...'
-                price='1250'
-                description='Descripción del producto 1'
-            /> */}
         </div>
     )
 }
