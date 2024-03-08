@@ -8,7 +8,7 @@ const ItemDetail = ({ id, name, category, img, price, stock, description }) => {
                 <div className="card-body">
                     <h5 className="card-title"> { name } </h5>
                     <p className="card-text"> { description } </p>
-                    <p className="card-text"> { price } </p>
+                    <p className="card-text">Precio: { price } </p>
                     <CountBtn title='Cantidad' stock={ stock }/>
                     <a href="#" className="btn btn-outline-light">Comprar</a>
                 </div>

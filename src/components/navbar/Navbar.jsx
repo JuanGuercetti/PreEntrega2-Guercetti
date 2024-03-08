@@ -1,15 +1,16 @@
-import './NavBar.css'
-import logoBlack from './assets/logoBlack.png'
-import CartWidget from '../CartWidget/CartWidget.jsx'
+import './NavBar.css';
+import logoBlack from './assets/logoBlack.png';
+import CartWidget from '../CartWidget/CartWidget.jsx';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <>
-        <nav className="navbar navbar-expand">
+        <nav className="navbar navbar-expand sticky-top">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
-                    <img src={logoBlack} alt="Logo" className="logo-img"/>
-                </a>
+                <Link to='/' className="navbar-brand">
+                    <img src={ logoBlack } alt="Logo de Happets" className="logo-img"/>
+                </Link>
 
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav nav-underline">

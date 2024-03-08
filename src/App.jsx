@@ -1,16 +1,24 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+{/* Todo lo que esté relacionado con la navegación, debe ir dentro de BrowserRouter 
+    Los que estén relacionados con la URL van dentro de Routes 
+    Dentro de Routes no puede haber otro componente que no sea Route*/}
 
 
 function App() {
   return (
     <>
-      <NavBar></NavBar>
-      {/* <ItemListContainer greeting='Bienvenidos' /> */}
-      <ItemDetailContainer greeting='Item Detail Container' itemId='3'/>
+      <BrowserRouter>
+        <NavBar/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer greeting='Bienvenidos' />}/>
+          <Route path='/item' element={<ItemDetailContainer greeting='Item Detail Container' itemId='3'/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
