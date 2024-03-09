@@ -9,9 +9,7 @@ const Item = ( { id, name, img, price, description, stock }) => {
                 <img src={ img } className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title"> { name } </h5>
-                    <p className="card-text"> { description } </p>
                     <p className="card-text">Precio: { price } </p>
-                    <CountBtn title='Cantidad' stock={ stock }/>
                     <Link to={`/item/${id}`} className="btn btn-outline-light">Ver detalle</Link>
                 </div>
             </div>

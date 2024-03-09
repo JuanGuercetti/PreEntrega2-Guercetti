@@ -10,7 +10,7 @@ const ItemDetail = ({ id, name, category, img, price, stock, description }) => {
                     <p className="card-text"> { description } </p>
                     <p className="card-text">Precio: { price } </p>
                     <CountBtn title='Cantidad' stock={ stock }/>
-                    <a href="#" className="btn btn-outline-light">Comprar</a>
+                    <a href="#" className="btn btn-outline-light">Agregar al carrito</a>
                 </div>
             </div>
         </div>

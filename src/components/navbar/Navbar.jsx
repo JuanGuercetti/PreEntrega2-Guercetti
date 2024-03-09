@@ -14,14 +14,12 @@ const NavBar = () => {
 
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav nav-underline">
-                        <li><a href="" className='nav-link link-light'>Correas</a></li>
-                        <li><a href="" className='nav-link link-light'>Collares</a></li>
-                            {/* Regulables y tradicionales
-                                Hacer menú desplegable */}
-                        <li><a href="" className='nav-link link-light'>Pretales</a></li>
-                        <li><a href="" className='nav-link link-light'>Chapas Identificatorias</a></li>
-                        <li><a href="" className='nav-link link-light disabled'>Bandanas</a></li>
-                            {/* Proximamente */}               
+                        <li ><Link to='/category/correas' className='nav-link link-light'>Correas</Link></li>
+                        <li><Link to='/category/collares' className='nav-link link-light'>Collares</Link></li>
+                        <li><Link to='/category/pretales' className='nav-link link-light'>Pretales</Link></li>
+
+                        {/* <li title="¡Próximamente!"><Link to='/category/chapas' className='nav-link link-light disabled'>Chapas Identificatorias</Link></li>
+                        <li title="¡Próximamente!"><Link to='/category/bandanas' className='nav-link link-light disabled'>Bandanas</Link></li>           */}
                     </ul>
                 </div>
             </div>

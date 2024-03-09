@@ -15,8 +15,10 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <Routes>
-          <Route path='/' element={<ItemListContainer greeting='Bienvenidos' />}/>
-          <Route path='/item' element={<ItemDetailContainer greeting='Item Detail Container' itemId='3'/>}/>
+          <Route path='/' element={<ItemListContainer greeting='¡Bienvenidos a Happets!' />}/>
+          <Route path='/category/:categoryId' element={<ItemListContainer greeting='Productos filtrados por categoría' />}/>
+          <Route path='/item/:itemId' element={<ItemDetailContainer greeting='Item Detail Container' itemId='3'/>}/>
+          {/*         Luego de : es lo que se define como dinámico */}
         </Routes>
       </BrowserRouter>
     </>
