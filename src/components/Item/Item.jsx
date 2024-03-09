@@ -2,7 +2,7 @@ import CountBtn from '../CountBtn/CountBtn';
 import './Item.css';
 import { Link } from 'react-router-dom';
 
-const Item = ( { id, name, img, price, description, stock }) => {
+const Item = ( { id, name, img, price }) => {
     return (
         <div className='col-sm-4 mb-3'>
             <div className="card text-bg-success ">
