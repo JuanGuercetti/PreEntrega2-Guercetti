@@ -17,9 +17,6 @@ const NavBar = () => {
                         <li ><Link to='/category/correas' className='nav-link link-light'>Correas</Link></li>
                         <li><Link to='/category/collares' className='nav-link link-light'>Collares</Link></li>
                         <li><Link to='/category/pretales' className='nav-link link-light'>Pretales</Link></li>
-
-                        {/* <li title="¡Próximamente!"><Link to='/category/chapas' className='nav-link link-light disabled'>Chapas Identificatorias</Link></li>
-                        <li title="¡Próximamente!"><Link to='/category/bandanas' className='nav-link link-light disabled'>Bandanas</Link></li>           */}
                     </ul>
                 </div>
             </div>
